@@ -1,5 +1,9 @@
 package com.example.demoweek2;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * This is the model class. It stores the information we would typically track about the objects
  * */
@@ -63,5 +67,11 @@ public class FoodMenu {
 
         return String.format("%s, $%.2f, %d Spicy, ", foodName, price, spicyLevel);
 
+    }
+
+    public static List<String> getOptions()
+    {
+        List<String> options = Arrays.asList("None","Mild","Hot","Extreme");
+        return  options;
     }
 }
